@@ -20,42 +20,45 @@
     </div>
 
     <nav>
-        <a href="#">Início</a>
-        <a href="#">Sobre</a>
-        <a href="#">Cultos</a>
-        <a href="#">Galeria</a>
-        <a href="#">Oração</a>
-        <a href="#">Contato</a>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#cultos">Cultos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#oracao">Oração</a>
+        <a href="#contato">Contato</a>
     </nav>
 </header>
 
+<!-- Página Inicial -->
+<section class="principal" id="inicio">
 
-<!-- Página principal -->
-<section class="principal">
+<div class="texto">
 
-    <div class="texto">
-        <h2>Uma igreja com propósito,<br>
-        uma família para pertencer.</h2>
+<h2>
+Uma igreja com propósito,<br>
+uma família para pertencer.
+</h2>
 
-        <p>
-        "Ide por todo o mundo e pregai o evangelho a toda criatura."
-        <br>
-        Marcos 16:15
-        </p>
+<p>
+"Ide por todo o mundo e pregai o evangelho a toda criatura."
+<br>
+Marcos 16:15
+</p>
 
-        <button>VENHA NOS VISITAR</button>
-    </div>
+<button>VENHA NOS VISITAR</button>
+
+</div>
 
 </section>
 
 
-<!-- Sobre -->
-<section class="sobre">
+<!-- Sobre nós -->
+<section class="sobre" id="sobre">
 
 <h2>Quem Somos</h2>
 
 <p>
-A Igreja do Evangelho Quadrangular de Mâncio Lima é um lugar de fé, amor e transformação. 
+A Igreja do Evangelho Quadrangular de Mâncio Lima é um lugar de fé, amor e transformação.
 Nossa missão é anunciar o Evangelho de Jesus Cristo, acolher famílias e servir nossa comunidade.
 </p>
 
@@ -66,241 +69,3 @@ Pastor Delmiro e Pastora Francisca Ribeiro, servindo com dedicação e amor à o
 </p>
 
 </section>
-
-</body>
-</html>
-/* Configurações gerais */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body{
-    background: #ffffff;
-    color: #222;
-}
-
-/* Cabeçalho */
-header{
-    background: linear-gradient(90deg, #e30613, #005bbb, #f8c300, #7d2ae8);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo h1{
-    font-size: 22px;
-}
-
-.logo p{
-    font-size: 14px;
-}
-
-nav a{
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav a:hover{
-    color: #000;
-}
-
-/* Página principal */
-.principal{
-    height: 100vh;
-    background: linear-gradient(
-        rgba(0,0,0,0.6),
-        rgba(0,0,0,0.6)
-    ),
-    url("culto.jpg");
-
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    align-items: center;
-    padding: 0 8%;
-    color: white;
-}
-
-.texto h2{
-    font-size: 55px;
-    margin-bottom: 20px;
-}
-
-.texto p{
-    font-size: 20px;
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-/* Botão */
-button{
-    background: #f8c300;
-    color: #000;
-    border: none;
-    padding: 15px 35px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-button:hover{
-    background: #e30613;
-    color: white;
-    transform: scale(1.05);
-}
-
-/* Sobre nós */
-.sobre{
-    padding: 100px 8%;
-    text-align: center;
-}
-
-.sobre h2{
-    color: #e30613;
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.sobre h3{
-    color: #005bbb;
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-.sobre p{
-    font-size: 18px;
-    line-height: 1.7;
-    max-width: 900px;
-    margin: auto;
-}
-
-/* Responsivo para celular */
-@media (max-width: 768px){
-
-    header{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav{
-        margin-top: 15px;
-    }
-
-    nav a{
-        display: inline-block;
-        margin: 8px;
-    }
-
-    .texto h2{
-        font-size: 35px;
-    }
-
-    .texto p{
-        font-size: 16px;
-    }
-}
-
-<section class="cultos">
-
-<h2>Nossos Cultos</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>❤️ Culto da Família</h3>
-<p>Domingo</p>
-<p>19:00h</p>
-</div>
-
-<div class="card">
-<h3>🙏 Culto de Oração</h3>
-<p>Quarta-feira</p>
-<p>19:30h</p>
-</div>
-
-<div class="card">
-<h3>📖 Escola Bíblica</h3>
-<p>Domingo</p>
-<p>08:00h</p>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- Galeria -->
-<section class="galeria">
-
-<h2>Nossa Galeria</h2>
-
-<div class="fotos">
-
-<img src="foto1.jpg" alt="Culto">
-<img src="foto2.jpg" alt="Evento">
-<img src="foto3.jpg" alt="Batismo">
-
-</div>
-
-</section>
-
-
-<!-- Pedido de Oração -->
-<section class="oracao">
-
-<h2>Pedido de Oração</h2>
-
-<form>
-
-<input type="text" placeholder="Seu nome">
-
-<input type="text" placeholder="Seu pedido de oração">
-
-<button>Enviar Pedido</button>
-
-</form>
-
-</section>
-
-
-<!-- Contato -->
-<section class="contato">
-
-<h2>Venha nos visitar</h2>
-
-<p>📍 Rua Camilo Galdino, Bairro Bandeirante, Mâncio Lima - AC</p>
-
-<p>👨‍💼 Pastores: Delmiro e Francisca Ribeiro</p>
-
-<p>📖 "Porque onde estiverem dois ou três reunidos em meu nome, ali estou no meio deles." Mateus 18:20</p>
-
-</section>
-
-
-<!-- Rodapé -->
-<footer>
-
-<h3>Igreja do Evangelho Quadrangular</h3>
-
-<p>Mâncio Lima - Acre</p>
-
-<p>Uma igreja com propósito, uma família para pertencer.</p>
-
-<p>© 2026 Todos os direitos reservados.</p>
-
-</footer>

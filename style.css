@@ -1,0 +1,169 @@
+/* Configurações gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #030814;
+    color: white;
+}
+
+/* Cabeçalho */
+header{
+    background: linear-gradient(90deg, #e30613, #005bbb, #f8c300, #7d2ae8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1{
+    font-size: 22px;
+}
+
+.logo p{
+    font-size: 14px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #000;
+}
+
+/* Capa */
+.principal{
+    height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url("culto.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.texto h2{
+    font-size: 55px;
+    color: #f8c300;
+}
+
+.texto p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Botões */
+button{
+    margin-top: 25px;
+    background: #f8c300;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* Seções */
+section{
+    padding: 80px 8%;
+}
+
+h2{
+    text-align: center;
+    color: #f8c300;
+    margin-bottom: 25px;
+}
+
+/* Cards dos cultos */
+.cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: #081325;
+    padding: 25px;
+    width: 250px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* Galeria */
+.fotos{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fotos img{
+    width: 300px;
+    border-radius: 12px;
+}
+
+/* Pedido de oração */
+form{
+    max-width: 500px;
+    margin: auto;
+}
+
+input{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Rodapé */
+footer{
+    background: #01050d;
+    text-align: center;
+    padding: 30px;
+    border-top: 3px solid #f8c300;
+}
+
+/* Celular */
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+
+    nav a{
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .texto h2{
+        font-size: 35px;
+    }
+
+    .fotos img{
+        width: 100%;
+    }
+}
